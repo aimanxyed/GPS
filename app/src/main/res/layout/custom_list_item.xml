@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/txt_id"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="1"
+        android:gravity="center_vertical|center"
+        android:textSize="20sp"
+        android:textColor="@color/colorGray"
+        android:background="@drawable/circle">
+
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="user name"
+        android:gravity="center_vertical"
+        android:textSize="10dp"
+        >
+
+    </TextView>
+
+
+
+
+</LinearLayout>
