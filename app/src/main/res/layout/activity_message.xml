@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#00201919"
     tools:context=".Message">
 
     <ListView
@@ -17,25 +18,15 @@
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/button"
-        android:layout_alignParentBottom="true"
-        android:backgroundTint="@color/colorAccent"
         android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
         android:layout_margin="30dp"
+        android:backgroundTint="@color/colorAccent"
+        android:src="@drawable/button"
 
         >
 
     </com.google.android.material.floatingactionbutton.FloatingActionButton>
-
-
-
-
-
-
-
-
-
-
 
 
 </RelativeLayout>

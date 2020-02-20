@@ -3,4 +3,5 @@
     <string name="login_header">Enter Id</string>
     <string name="drawerOpen">drawerOpen</string>
     <string name="drawerClose">drawerClose</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

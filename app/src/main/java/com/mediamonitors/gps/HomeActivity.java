@@ -79,12 +79,17 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.complains:
                 Toast.makeText(HomeActivity.this, "Complains Selected", Toast.LENGTH_SHORT).show();
-                // startActivity(new Intent(getApplicationContext(), complainsActivity.class));
+
                 break;
             case R.id.logout:
                 Toast.makeText(HomeActivity.this, "Logout Selected", Toast.LENGTH_SHORT).show();
                 //firebaseAuth.signOut();
                 // finish();
+                break;
+            case R.id.location:
+                Toast.makeText(HomeActivity.this, "Location Selected", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getApplicationContext(), MapsActivity.class));
+
                 break;
 
 

@@ -15,6 +15,9 @@
     <item
         android:id="@+id/logout"
         android:title="Logout"/>
+    <item
+        android:id="@+id/location"
+        android:title="Location"/>
 
 
 </menu>

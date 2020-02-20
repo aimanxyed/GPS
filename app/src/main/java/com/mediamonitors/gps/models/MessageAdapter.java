@@ -31,10 +31,12 @@ public class MessageAdapter extends ArrayAdapter<UserModel> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.custom_list_item, null, true);
-        TextView tvID = view.findViewById(R.id.txt_id);
         TextView tvName = view.findViewById(R.id.txt_name);
-        tvID.setText(arrayListUser.get(position).getId());
+
+        TextView tvMessage= view.findViewById(R.id.txt_message);
         tvName.setText(arrayListUser.get(position).getName());
+        tvMessage.setText(arrayListUser.get(position).getMessage());
+
         return view;
     }
 }

@@ -28,7 +28,7 @@ public class Message extends AppCompatActivity {
     MessageAdapter adapter;
     UserModel user;
     public static ArrayList<UserModel> userModelArrayList = new ArrayList<>();
-    String url = "https://mmgps.000webhostapp.com/user_info.php";
+    String url = "https://mmgps.000webhostapp.com/user_msg.php";
 
 
 
@@ -58,10 +58,11 @@ public class Message extends AppCompatActivity {
                         {
                           JSONObject object = jsonArray.getJSONObject(i);
                             String id =object.getString("id");
-                            String name =object.getString("name");
-                            String userLoginID =object.getString("userLoginID");
+                           String name =object.getString("name");
+                           String userLoginID =object.getString("userLoginID");
                             String password =object.getString("password");
-                            user= new UserModel(id, name, userLoginID, password);
+                            String message = object.getString("msg_description");
+                            user= new UserModel(id, name, userLoginID, password, message);
                             userModelArrayList.add(user);
                             adapter.notifyDataSetChanged();
 

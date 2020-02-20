@@ -7,12 +7,14 @@ public class UserModel {
     String name;
     String userLoginID;
     String password;
+   String message;
 
-    public UserModel(String id, String name, String userLoginID, String password) {
+    public UserModel(String id, String name, String userLoginID, String password, String message) {
         this.id = id;
         this.name = name;
         this.userLoginID = userLoginID;
         this.password = password;
+        this.message = message;
     }
     public String getId() {
         return id;
@@ -45,6 +47,9 @@ public class UserModel {
     public void setPassword(String password) {
         this.password = password;
     }
+
+   public String getMessage(){ return message;}
+    public void setMessage(String message){this.message=message;}
 
 
 
