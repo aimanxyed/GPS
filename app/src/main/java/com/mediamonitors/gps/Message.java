@@ -3,7 +3,6 @@ package com.mediamonitors.gps;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.widget.Adapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -13,7 +12,6 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.mediamonitors.gps.models.MessageAdapter;
 import com.mediamonitors.gps.models.UserModel;
 
 import org.json.JSONArray;

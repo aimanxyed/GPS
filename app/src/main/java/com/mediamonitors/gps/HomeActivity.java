@@ -79,6 +79,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.complains:
                 Toast.makeText(HomeActivity.this, "Complains Selected", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getApplicationContext(), MachineActivity.class));
 
                 break;
             case R.id.logout:
