@@ -23,7 +23,7 @@ import java.util.ArrayList;
 public class Message extends AppCompatActivity {
 
     ListView listView;
-    MessageAdapter adapter;
+    //MessageAdapter adapter;
     UserModel user;
     public static ArrayList<UserModel> userModelArrayList = new ArrayList<>();
     String url = "https://mmgps.000webhostapp.com/user_msg.php";
@@ -35,8 +35,8 @@ public class Message extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_message);
         listView = findViewById(R.id.myListView);
-        adapter = new MessageAdapter(this, userModelArrayList);
-        listView.setAdapter(adapter);
+        //adapter = new MessageAdapter(this, userModelArrayList);
+       // listView.setAdapter(adapter);
         retreiveData();
     }
     public void retreiveData()
@@ -49,6 +49,7 @@ public class Message extends AppCompatActivity {
                 try {
                     JSONObject jsonObject =  new JSONObject(response);
                     String success = jsonObject.getString("success");
+
                     JSONArray jsonArray = jsonObject.getJSONArray("data");
                     if (success.equals("1"))
                     {
@@ -62,7 +63,7 @@ public class Message extends AppCompatActivity {
                             String message = object.getString("msg_description");
                             user= new UserModel(id, name, userLoginID, password, message);
                             userModelArrayList.add(user);
-                            adapter.notifyDataSetChanged();
+                            //adapter.notifyDataSetChanged();
 
 
                         }

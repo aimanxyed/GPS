@@ -12,12 +12,13 @@
     <item
         android:id="@+id/complains"
         android:title="Complains"/>
-    <item
-        android:id="@+id/logout"
-        android:title="Logout"/>
+
     <item
         android:id="@+id/location"
         android:title="Location"/>
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"/>
 
 
 </menu>

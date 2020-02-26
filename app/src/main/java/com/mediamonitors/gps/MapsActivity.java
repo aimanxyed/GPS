@@ -25,10 +25,8 @@ import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
@@ -39,15 +37,9 @@ import com.karumi.dexter.listener.PermissionDeniedResponse;
 import com.karumi.dexter.listener.PermissionGrantedResponse;
 import com.karumi.dexter.listener.PermissionRequest;
 import com.karumi.dexter.listener.single.PermissionListener;
-import com.mediamonitors.gps.models.ServerUpload;
-import com.mediamonitors.gps.models.SingleTon;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Random;
 
 import androidx.annotation.Nullable;
 import androidx.core.app.ActivityCompat;
@@ -258,7 +250,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 if(response.equalsIgnoreCase("updated")){
 
 
-                    startActivity(new Intent(getApplicationContext(),HomeActivity.class));
+                    startActivity(new Intent(getApplicationContext(),MachineActivity.class));
 
                     Toast.makeText(MapsActivity.this, response, Toast.LENGTH_SHORT).show();
                 }

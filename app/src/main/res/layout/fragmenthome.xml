@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtprogramtype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Select Machine"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+    <Spinner
+        android:id="@+id/programtype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtprogramtype"
+        android:layout_marginTop="12dp" />
+
+
+    <TextView
+        android:id="@+id/txtprogram"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/programtype"
+        android:text="Other Machine"
+
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+
+    <Spinner
+        android:id="@+id/program"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtprogram"
+
+        />
+    <Button
+        android:id="@+id/btnlocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/searchpro"
+        android:layout_below="@+id/program"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/rounded_button_settings"
+        android:fontFamily="sans-serif"
+        android:text="Load"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <Button android:id="@+id/searchpro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnlocation"
+
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/downloadsetting"
+        android:text="Next"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+
+        android:textAllCaps="false"
+        android:textColor="#ffffff" />
+
+
+</RelativeLayout>
