@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.ProgressDialog;
 import android.content.Context;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -64,6 +65,7 @@ public class MachineActivity extends AppCompatActivity {
     public void next(View view)
     {
         Toast.makeText(MachineActivity.this, "next clicked", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(getApplicationContext(),CameraActivity.class));
     }
     public void load(View view)
     {
