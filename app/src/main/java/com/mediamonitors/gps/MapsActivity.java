@@ -255,7 +255,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     Toast.makeText(MapsActivity.this, response, Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    Toast.makeText(MapsActivity.this, "failed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MapsActivity.this, response, Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(getApplicationContext(),MachineActivity.class));
                 }
 
             }
